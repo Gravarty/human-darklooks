@@ -6,4 +6,4 @@ This theme works with **GTK 2.24** *(with murrine)* & **GTK 3.24** & **GTK 4.12.
 
 ## Screenshots
 
-[<img alt="Preview with GTK 2 - Main window" src="images/thumbs/gtk2.png?raw=true" width="200" />](screenshots/screenshots/1.png?raw=true)
+[<img alt="Preview with GTK 2 - Main window" src="images/thumbs/gtk2.png?raw=true" width="200" />](screenshots/1.png?raw=true)
