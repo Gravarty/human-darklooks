@@ -107,7 +107,7 @@ dialog.background.solid-csd .dialog-vbox.vertical .dialog-action-area {
 .background.ssd decoration,
 .background.solid-csd decoration {
 	padding: 3px;
-	border: 1px solid #6F6358; /* @todo metacity */
+	border: 1px solid #353635; /* @todo metacity */
 	border-top: 0;
 	/* border-radius: 8px 8px 0 0; */
 	background-color: @theme_bg;
