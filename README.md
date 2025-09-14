@@ -7,3 +7,7 @@ This theme works with **GTK 2.24** *(with murrine)* & **GTK 3.24** & **GTK 4.12.
 ## Screenshots
 
 ![Screenshot](https://raw.githubusercontent.com/Gravarty/human-darklooks/refs/heads/main/screenshots/1.png)
+
+![Screenshot](https://raw.githubusercontent.com/Gravarty/human-darklooks/refs/heads/main/screenshots/2.png)
+
+![Screenshot](https://raw.githubusercontent.com/Gravarty/human-darklooks/refs/heads/main/screenshots/3.png)
