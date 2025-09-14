@@ -1,0 +1,170 @@
+/* --- Infobars --- */
+@define-color infobar_fg @theme_fg; /* #E6E6E6 */
+@define-color infobar_bg_top shade(@theme_bg, 1.25); /* ~#6B6E69 */
+@define-color infobar_bg_bot shade(@theme_bg, 1.2);  /* ~#666964 */
+@define-color infobar_border shade(@infobar_bg_bot, 0.675);
+
+@define-color questionbar_fg @theme_fg;
+@define-color questionbar_bg_top mix(@theme_bg, @theme_selected_fg, 0.4); /* ~grau/blau */
+@define-color questionbar_bg_bot mix(@theme_bg, @theme_selected_fg, 0.35);
+@define-color questionbar_border shade(@questionbar_bg_bot, 0.675);
+
+@define-color warningbar_fg @theme_fg;
+@define-color warningbar_bg_top mix(@theme_bg, #F5A734, 0.4);
+@define-color warningbar_bg_bot mix(@theme_bg, #F5A734, 0.35);
+@define-color warningbar_border shade(@warningbar_bg_bot, 0.674);
+
+@define-color errorbar_fg #FFF;
+@define-color errorbar_bg_top #ED3636;
+@define-color errorbar_bg_bot #E92F2F;
+@define-color errorbar_border shade(@errorbar_bg_bot, 0.675);
+
+/* --- Rahmen & Separatoren --- */
+@define-color content_separator_dark alpha(shade(@theme_bg, 0.73), 0.5);
+@define-color content_separator_lite alpha(shade(@theme_bg, 1.27), 0.5);
+@define-color expander_hover alpha(shade(@theme_bg, 1.5), 0.15);
+@define-color dialog_border shade(@theme_bg, 0.7);        /* ~#3C3D3A */
+@define-color frame_border shade(@theme_bg, 0.775);       /* ~#444543 */
+@define-color frame_border_bis shade(@frame_border, 1.082);
+@define-color frame_shadow_dark shade(@theme_bg, 0.96);
+@define-color frame_shadow_lite shade(@theme_bg, 1.04);
+
+/* --- Notebooks --- */
+@define-color nb_bg shade(@theme_bg, 1.047);
+@define-color nb_border shade(@theme_bg, 0.733);
+@define-color nb_tab_border shade(@theme_bg, 0.814);
+@define-color nb_tab_glaze_top shade(@theme_bg, 0.985);
+@define-color nb_tab_glaze_mida shade(@theme_bg, 0.98);
+@define-color nb_tab_glaze_midb shade(@theme_bg, 0.933);
+@define-color nb_tab_glaze_bot shade(@theme_bg, 0.91);
+@define-color nb_tab_checked_glaze_top shade(@theme_bg, 1.08);
+@define-color nb_tab_checked_glaze_mida shade(@theme_bg, 1.072);
+@define-color nb_tab_checked_glaze_midb shade(@theme_bg, 1.022);
+@define-color nb_tab_checked_glaze_bot shade(@theme_bg, 1.047);
+@define-color nb_tab_focus_bg alpha(shade(@theme_selected_bg, 1.27), 0.175);
+
+/* --- Menüs --- */
+@define-color menu_bg mix(@theme_base, @theme_bg, 0.67); /* Mischung aus #2E3436 + #555753 */
+@define-color menu_border shade(@theme_bg, 0.734);
+@define-color menu_tearoff_border shade(@theme_bg, 0.9);
+@define-color menu_bg_arrow @menu_bg;
+@define-color menu_bg_disabled_arrow @theme_bg;
+@define-color menu_border_arrow shade(@theme_bg, 0.813);
+@define-color menu_separator_dark alpha(shade(@theme_bg, 0.77), 0.5);
+@define-color menu_separator_lite alpha(shade(@theme_bg, 1.27), 0.5);
+@define-color menubar_grad_top @theme_bg;               /* #555753 */
+@define-color menubar_grad_bot shade(@theme_bg, 0.952); /* ~#525550 */
+@define-color menubar_border_bot shade(@theme_bg, 0.839);
+@define-color toolbar_border_top shade(@theme_bg, 1.0585);
+@define-color toolbar_grad_top @theme_bg;
+@define-color toolbar_grad_bot shade(@theme_bg, 0.95);
+@define-color toolbar_border_bot shade(@theme_bg, 0.839);
+@define-color toolbar_separator_dark alpha(shade(@theme_bg, 0.73), 0.5);
+@define-color toolbar_separator_lite alpha(shade(@theme_bg, 1.27), 0.5);
+
+/* --- Eingabefelder --- */
+@define-color entry_bg @theme_base; /* #2E3436 */
+@define-color entry_border shade(@theme_bg, 0.55);
+@define-color entry_border_disabled shade(@entry_border, 1.41);
+@define-color entry_bg_disabled @theme_bg;
+@define-color checkbutton_hover_bg alpha(shade(@theme_bg, 1.5), 0.15);
+@define-color checkbutton_focus_bg alpha(shade(@theme_selected_bg, 1.27), 0.175);
+@define-color checkbutton_focus_hover_bg alpha(shade(@theme_selected_bg, 1.48), 0.175);
+@define-color checkbutton_focus_hover_border alpha(shade(@theme_selected_bg, 1.485), 0.7);
+@define-color button_border shade(@theme_bg, 0.693);
+@define-color button_border_disabled shade(@theme_bg, 0.864);
+
+/* --- Buttons Glaze --- */
+@define-color button_glaze_top alpha(shade(@theme_bg, 1.11), 0.17);
+@define-color button_glaze_glow_center alpha(shade(@theme_bg, 1.105), 0.75);
+@define-color button_glaze_glow_edge alpha(shade(@theme_bg, 0.995), 0);
+@define-color button_glaze_mida alpha(shade(@theme_bg, 1.03), 0.8);
+@define-color button_glaze_midb alpha(shade(@theme_bg, 0.93), 0.9);
+@define-color button_glaze_bot alpha(shade(@theme_bg, 0.95), 0.9);
+
+@define-color button_disabled_glaze_top alpha(shade(@theme_bg, 1.05), 0.2);
+@define-color button_disabled_glaze_glow_center alpha(shade(@theme_bg, 1.10), 0.45);
+@define-color button_disabled_glaze_glow_edge alpha(@theme_bg, 0);
+@define-color button_disabled_glaze_mida alpha(shade(@theme_bg, 1.03), 0.2);
+@define-color button_disabled_glaze_midb alpha(shade(@theme_bg, 0.93), 0.2);
+@define-color button_disabled_glaze_bot alpha(shade(@theme_bg, 0.95), 0.39);
+
+@define-color button_active_glaze_top alpha(shade(@theme_bg, 0.89), 0.78);
+@define-color button_active_glaze_glow_center alpha(shade(@theme_bg, 1.10), 0.4);
+@define-color button_active_glaze_glow_edge alpha(shade(@theme_bg, 0.95), 0);
+@define-color button_active_glaze_mida alpha(shade(@theme_bg, 0.82), 0.8);
+@define-color button_active_glaze_midb alpha(shade(@theme_bg, 0.76), 0.8);
+@define-color button_active_glaze_shadow alpha(shade(@theme_bg, 0.85), 0.3);
+@define-color button_active_glaze_shadow_edge alpha(shade(@theme_bg, 0.81), 0.9);
+@define-color button_active_glaze_bot alpha(shade(@theme_bg, 0.8), 0.79);
+
+@define-color button_hover_glaze_top alpha(shade(@theme_bg, 1.09), 0.8);
+@define-color button_hover_glaze_glow_center alpha(shade(@theme_bg, 1.1), 0.8);
+@define-color button_hover_glaze_glow_edge alpha(shade(@theme_bg, 1.1), 0);
+@define-color button_hover_glaze_mida alpha(shade(@theme_bg, 1.05), 0.8);
+@define-color button_hover_glaze_midb alpha(shade(@theme_bg, 0.96), 0.8);
+@define-color button_hover_glaze_bot alpha(shade(@theme_bg, 0.93), 0.8);
+
+@define-color button_focus_fill alpha(shade(@theme_selected_bg, 1.6), 0.15);
+@define-color button_focus_fill_active alpha(shade(@theme_selected_bg, 1.5), 0.2);
+
+/* --- Slider & Scrollbars --- */
+@define-color slider_base shade(@theme_selected_bg, 1.04);
+@define-color slider_border_treeview shade(@theme_bg, 0.7);
+@define-color slider_border shade(@slider_base, 0.745);
+@define-color slider_trough_bg shade(@theme_bg, 0.881);
+@define-color slider_trough_border shade(shade(@theme_bg, 0.839), 0.876);
+@define-color slider_pattern alpha(shade(@theme_selected_bg, 1.2), 0.8);
+
+@define-color scale_trough_bg shade(@theme_bg, 0.881);
+@define-color scroll_bg shade(@theme_bg, 1.025);
+@define-color scroll_border shade(@theme_bg, 0.82);
+@define-color scroll_slider_border shade(@theme_bg, 0.631);
+@define-color scroll_glaze_glow shade(@theme_bg, 1.1);
+@define-color scroll_glaze_glow_center alpha(@scroll_glaze_glow, 0.15);
+@define-color scroll_glaze_glow_edge alpha(@scroll_glaze_glow, 0);
+
+@define-color scroll_glaze_top shade(@theme_bg, 0.828);
+@define-color scroll_glaze_mida shade(@theme_bg, 0.87);
+@define-color scroll_glaze_midb shade(@theme_bg, 0.783);
+@define-color scroll_glaze_bot shade(@theme_bg, 0.759);
+
+@define-color scroll_hover_glaze_top shade(@theme_bg, 0.863);
+@define-color scroll_hover_glaze_mida shade(@theme_bg, 0.887);
+@define-color scroll_hover_glaze_midb shade(@theme_bg, 0.816);
+@define-color scroll_hover_glaze_bot shade(@theme_bg, 0.79);
+
+/* --- Menuitem Hover --- */
+@define-color menuitem_hover @theme_selected_fg; /* #7AA3CC */
+@define-color menuitem_hover_border shade(@theme_selected_bg, 0.767);
+@define-color menuitem_hover_glaze @theme_selected_bg;
+@define-color menuitem_hover_glaze_bot shade(@menuitem_hover_glaze, 0.9621);
+@define-color menuitem_hover_glaze_glow shade(@theme_selected_bg, 1.2);
+@define-color menuitem_hover_glaze_glow_center alpha(@menuitem_hover_glaze_glow, 0.5);
+@define-color menuitem_hover_glaze_glow_edge alpha(@menuitem_hover_glaze_glow, 0);
+@define-color menuitem_hover_glaze_mida shade(@menuitem_hover_glaze, 0.96);
+@define-color menuitem_hover_glaze_midb shade(@menuitem_hover_glaze, 0.96);
+@define-color menuitem_hover_glaze_top shade(@menuitem_hover_glaze, 1.042);
+@define-color menuitem_hover_border_bottom @menuitem_hover_glaze_bot;
+
+/* --- Scale --- */
+@define-color scale_glaze_bot shade(@theme_bg, 0.92);
+@define-color scale_glaze_glow shade(@theme_bg, 1.15);
+@define-color scale_glaze_glow_center alpha(@scale_glaze_glow, 0.5);
+@define-color scale_glaze_glow_edge alpha(@scale_glaze_glow, 0);
+@define-color scale_glaze_mida shade(@theme_bg, 1.03);
+@define-color scale_glaze_midb shade(@theme_bg, 0.95);
+@define-color scale_glaze_top shade(@theme_bg, 1.05);
+@define-color scale_hover_glaze_bot shade(@theme_bg, 0.94);
+@define-color scale_hover_glaze_mida shade(@theme_bg, 1.05);
+@define-color scale_hover_glaze_midb shade(@theme_bg, 0.97);
+@define-color scale_hover_glaze_top shade(@theme_bg, 1.07);
+
+/* --- Slider Glaze --- */
+@define-color slider_glaze_bot alpha(shade(@slider_base, 0.80), 0.8);
+@define-color slider_glaze_glow shade(@theme_bg, 1.1);
+@define-color slider_glaze_glow_center alpha(@button_glaze_glow_center, 0.2);
+@define-color slider_glaze_glow_edge alpha(@button_glaze_glow_center, 0);
+@define-color slider_glaze_mida alpha(shade(@slider_base, 0.95), 0.8);
+@define-color slider_glaze_midb alpha(shade(@slider_base, 0.85), 0.8);
+@define-color slider_glaze_top alpha(@slider_base, 0.8);

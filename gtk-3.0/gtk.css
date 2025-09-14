@@ -1,0 +1,131 @@
+@define-color theme_bg #555753;
+@define-color theme_fg #E6E6E6;
+@define-color theme_base #2E3436;
+@define-color theme_text #D3D7CF;
+@define-color theme_selected_bg #3F403D;
+@define-color theme_selected_fg #FFFFFF;
+@define-color insensitive_fg #AAAAAA;
+@define-color insensitive_selected alpha(@theme_selected_fg, 0.8);
+@define-color insensitive_text_shadow alpha(@theme_base, 0.5);
+
+@define-color theme_tooltip_bg #EDDE5C;
+@define-color theme_tooltip_fg #000000;
+@define-color theme_tooltip_border shade(@theme_tooltip_bg, 0.63); /* ~#C2C250 */
+@define-color theme_notification_countdown mix(@theme_selected_bg, yellow, 0.35);
+@define-color theme_outline shade(@theme_selected_bg, 1.499);
+@define-color theme_link #7AA3CC;
+@define-color theme_visited_link shade(@theme_link, 0.8); /* etwas dunkler für besuchte Links */
+@define-color theme_checkradio1 shade(@theme_bg, 0.839); /* ~#4A4B48 */
+@define-color theme_checkradio2 @slider_border;
+@define-color theme_checkradio3 shade(@theme_selected_bg, 1.556); /* ~#62635E */
+
+/* Darklooks shades */
+@define-color bg_prelight #5A5C57;   /* shade(1.02,@bg_color) */
+@define-color bg_active #4D4E49;     /* shade(0.9,@bg_color) */
+@define-color base_prelight #50524E; /* shade(0.95,@bg_color) */
+@define-color base_active #393A38;   /* shade(0.9,@selected_bg_color) */
+@define-color fg_lighter #F0F0F0;    /* lighter(@fg_color) */
+@define-color btn_normal #5B5E58;    /* shade(1.04,@bg_color) */
+@define-color btn_prelight #5F615C;  /* shade(1.06,@bg_color) */
+@define-color btn_active #484A46;    /* shade(0.85,@bg_color) */
+@define-color menu_bg #5E615B;       /* shade(1.08,@bg_color) */
+@define-color nautilus_mix #4B4E48;  /* mix(0.60, shade(1.05,@bg_color), @selected_bg_color) */
+
+/* https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/named-colors.html */
+@define-color theme_bg_color @theme_bg;
+@define-color theme_fg_color @theme_fg;
+@define-color theme_base_color @theme_base;
+@define-color theme_text_color @theme_text;
+@define-color theme_selected_bg_color @theme_selected_bg;
+@define-color theme_selected_fg_color @theme_selected_fg;
+@define-color insensitive_fg_color @insensitive_fg;
+
+@import url("gtk-shade.css");
+@import url("base.css");
+@import url("mate.css");
+@import url("xfce.css");
+@import url("cinnamon.css");
+@import url("apps.css");
+
+/* terminal colors */
+vte-terminal {
+	color: @theme_fg;
+	background-color: @theme_base;
+}
+
+/* special */
+@define-color slider_pattern_shade shade(@slider_pattern, 1.8);
+
+treeview.view:not(.trough):not(.progressbar):selected:not(:focus),
+treeview.view.odd:not(.trough):not(.progressbar):selected:not(:focus),
+treeview.view.odd.sorted:not(.trough):not(.progressbar):selected:not(:focus),
+treeview.view.even:not(.trough):not(.progressbar):selected:not(:focus),
+treeview.view.even.sorted:not(.trough):not(.progressbar):selected:not(:focus) {
+	background:
+		radial-gradient(ellipse 110% 50%,
+			shade(@menuitem_hover_glaze_glow_center, 1.2),
+			shade(@menuitem_hover_glaze_glow_edge, 1.2)),
+		linear-gradient(to bottom,
+			shade(@menuitem_hover_glaze_top, 1.2),
+			shade(@menuitem_hover_glaze_mida, 1.2) 50%,
+			shade(@menuitem_hover_glaze_midb, 1.2) 50%,
+			shade(@menuitem_hover_glaze_bot, 1.2));
+	border-image-source: repeating-linear-gradient(to bottom,
+		shade(@theme_selected_bg, 1.2) 0,
+		shade(@theme_selected_bg, 1.2) 3px,
+		#9f9f9f 3px,
+		#9f9f9f 4px);
+}
+
+/* Hover-Effekt für Treeview */
+list row:hover,
+treeview.view:not(.trough):not(.progressbar):hover,
+treeview.view.odd:hover,
+treeview.view.even:hover {
+   box-shadow: inset 0 0 0 1px #555753;
+   transition: box-shadow 0.3s ease;
+   border-radius: 1px;
+   background-color: transparen
+}
+
+/* Aktive/ausgewählte Zeile */
+list row:selected {
+    background-color: @theme_selected_bg;
+    color: @theme_selected_fg;
+}
+
+
+stackswitcher > button > label {
+    color: #FFFFFF;
+}
+
+stackswitcher > button:checked > label,
+stackswitcher > button:active > label,
+stackswitcher > button:focus > label,
+stackswitcher > button:hover > label,
+stackswitcher > button:disabled > label,
+stackswitcher > button:backdrop > label {
+    color: #FFFFFF;
+}
+
+headerbar,
+window.csd headerbar,
+window.solid-csd headerbar,
+.titlebar,
+window.csd .titlebar {
+    background-color: @theme_bg;   /* deine dunkle Hintergrundfarbe */
+    color: @theme_fg;              /* Schrift hell */
+}
+
+headerbar:backdrop,
+.titlebar:backdrop {
+    background-color: shade(@theme_bg, 0.9);
+    color: @insensitive_fg;
+}
+
+headerbar .title,
+.titlebar .title,
+headerbar .subtitle {
+    color: @theme_fg;
+}
+

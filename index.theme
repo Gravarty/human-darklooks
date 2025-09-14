@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Encoding=UTF-8
+Name=Human Darklooks
+
+[X-GNOME-Metatheme]
+ButtonLayout=:minimize,maximize,close
+CursorSize=16
+CursorTheme=DMZ-Black
+GtkTheme=human-darklooks
+GtkApplicationPreferDarkTheme=true
+IconTheme=gnome-mate
+MetacityTheme=ClearlooksRe
+Encoding=UTF-8
+Name=Human Darklooks

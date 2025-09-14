@@ -1,0 +1,164 @@
+/* --- gimp 3 --- */
+
+GimpFileDialog filechooser treeview.view button {
+	padding: 0;
+}
+
+GimpFileDialog filechooser treeview.view:selected {
+	color: @theme_selected_fg; /* #7AA3CC */
+}
+
+/* --- audacity --- */
+
+window > box > widget > widget {
+	background-color: @theme_bg; /* #555753 */
+}
+
+/* --- geany & pluma --- */
+
+#GeanyMainWindow #notebook_info {
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+
+#GeanyMainWindow.maximized notebook stack > box,
+window.pluma-window notebook stack > box {
+	margin: 0 -1px;
+}
+
+window.pluma-window notebook stack > box scrolledwindow {
+	border: 0;
+}
+
+#GeanyMainWindow notebook widget:dir(ltr) scrollbar.vertical {
+	margin-left: 0;
+}
+
+#GeanyMainWindow notebook widget:dir(rtl) scrollbar.vertical {
+	margin-right: 0;
+}
+
+#GeanyMainWindow notebook widget scrollbar.horizontal {
+	margin-top: 0;
+}
+
+#GeanyMainWindow statusbar {
+	margin: -8px -10px -4px;
+}
+
+#GeanyMainWindow statusbar.classic {
+	margin: -3px -10px 0;
+}
+
+#GeanyMainWindow statusbar progressbar.horizontal {
+	margin: 0 -1px 2px 0;
+}
+
+/* --- libre office --- */
+
+#LibreOfficeMainWindow > grid.horizontal > grid.horizontal > scrolledwindow > viewport.frame {
+	border: 0;
+}
+
+#LibreOfficeMainWindow > grid.horizontal > grid.horizontal > scrolledwindow + button.flat.small-button {
+	min-width: 24px;
+	min-height: 24px;
+	border-bottom: 1px solid @menubar_border_bot;
+	border-radius: 0;
+}
+
+#LibreOfficeMainWindow > grid.horizontal > grid.horizontal {
+	background: linear-gradient(to bottom, @menu_bg, @bg_active);
+	/* @menu_bg = #5E615B, @bg_active = #4D4E49 */
+}
+
+/* --- bleachbit --- */
+
+#BleachbitMainWindow > box > box > scrolledwindow:dir(ltr) scrollbar.vertical {
+	padding-top: 33px;
+	padding-right: 3px;
+	padding-bottom: 33px;
+	border-right: 2px solid @menu_border;
+}
+
+#BleachbitMainWindow > box > box > scrolledwindow + box scrolledwindow:dir(ltr) {
+	padding: 5px 1px 5px 5px;
+	background: @theme_base; /* #2E3436 */
+}
+
+#BleachbitMainWindow > box > box > scrolledwindow + box scrolledwindow:dir(ltr) scrollbar.vertical {
+	margin-top: -5px;
+	margin-bottom: -5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	border-left: 1px solid @menu_border;
+	background: @theme_bg; /* #555753 */
+}
+
+#BleachbitMainWindow > box > box > scrolledwindow:dir(rtl) scrollbar.vertical {
+	margin-right: -3px;
+	padding-top: 33px;
+	padding-left: 3px;
+	padding-bottom: 33px;
+	border-left: 2px solid @menu_border;
+}
+
+#BleachbitMainWindow > box > box > box > scrolledwindow:dir(rtl) {
+	padding: 5px 5px 5px 1px;
+	background: @theme_base; /* #2E3436 */
+}
+
+#BleachbitMainWindow > box > box > box > scrolledwindow:dir(rtl) scrollbar.vertical {
+	margin-top: -5px;
+	margin-bottom: -5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 3px;
+	border-right: 1px solid @menu_border;
+	background: @theme_bg; /* #555753 */
+}
+
+/* --- gnome/cinnamon terminal --- */
+
+terminal-window box.vertical notebook {
+	margin: 0;
+}
+
+terminal-window box.vertical notebook stack {
+	border: 0;
+	border-radius: 0;
+}
+
+terminal-window box.vertical notebook header.top {
+	margin: 0 0 1px;
+}
+
+terminal-window:dir(ltr) box.vertical notebook header.top tabs + box {
+	margin: -3px 1px -3px 3px;
+}
+
+terminal-window:dir(rtl) box.vertical notebook header.top tabs + box {
+	margin: -3px 3px -3px 1px;
+}
+
+terminal-window box.vertical notebook header.top tabs + box button {
+	margin: 0;
+	padding: 3px 5px;
+}
+
+terminal-window:not(.maximized) box.vertical notebook header.top ~ stack {
+	border: 1px solid @nb_border;
+	border-top: 0;
+}
+
+/* --- maximized window fixes --- */
+
+window.background.maximized.caja-navigation-window:not(.scrollfix):dir(ltr)
+	notebook.caja-notebook scrolledwindow.frame {
+	border-right-width: 0;
+}
+
+window.background.maximized.caja-navigation-window:not(.scrollfix):dir(rtl)
+	notebook.caja-notebook scrolledwindow.frame {
+	border-left-width: 0;
+}
