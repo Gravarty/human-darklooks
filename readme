@@ -1,4 +1,4 @@
-This theme is a dark variant of luigifab’s human-theme, which itself is based on an official Ubuntu 10.10 theme called “Darklooks”.
+# This theme is a dark variant of luigifab’s human-theme, which itself is based on an official Ubuntu 10.10 theme called “Darklooks”.
 
 The theme works with GTK 2.24 (with murrine), GTK 3.24, and GTK 4.12–4.19. It works with or without a compositor, with or without CSD windows, and with or without gtk3/4-classic.
 
