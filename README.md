@@ -6,4 +6,4 @@ This theme works with **GTK 2.24** *(with murrine)* & **GTK 3.24** & **GTK 4.12.
 
 ## Screenshots
 
-[<img alt="Preview with GTK 2 - Main window" src="images/thumbs/gtk2.png?raw=true" width="200" />](screenshots/1.png?raw=true)
+![Screenshot](https://example.com/screenshot.png](https://raw.githubusercontent.com/Gravarty/human-darklooks/refs/heads/main/screenshots/1.png)e)
